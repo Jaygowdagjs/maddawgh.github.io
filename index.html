@@ -3,69 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Immersive Timeline Magazine</title>
+    <title>Immersive Timeline Magazine Layout</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header class="hero">
-        <h1>Mechanical Engineer & Medical Device Designer</h1>
-        <h2>Innovating solutions for a better healthcare experience</h2>
+        <h1>My Journey</h1>
+        <p>Explore my professional timeline from the beginning to now.</p>
     </header>
+    <main>
+        <div class="timeline">
+            <div class="timeline-row" id="story-intro">
+                <div class="timeline-card">
+                    <h2>Story Intro</h2>
+                    <p>Introduction content...</p>
+                    <button onclick="openModal('story-intro-modal')">More Info</button>
+                </div>
+            </div>
+            <div class="timeline-row" id="lab-assistant">
+                <div class="timeline-card">
+                    <h2>Lab Assistant</h2>
+                    <p>Details about the lab assistant role...</p>
+                    <button onclick="openModal('lab-assistant-modal')">More Info</button>
+                </div>
+            </div>
+            <div class="timeline-row" id="masters-education">
+                <div class="timeline-card">
+                    <h2>Masters Education</h2>
+                    <p>My master's education experience...</p>
+                    <button onclick="openModal('masters-education-modal')">More Info</button>
+                </div>
+            </div>
+            <div class="timeline-row" id="td-power-systems">
+                <div class="timeline-card">
+                    <h2>TD Power Systems</h2>
+                    <p>Description of my work at TD Power Systems...</p>
+                    <button onclick="openModal('td-power-systems-modal')">More Info</button>
+                </div>
+            </div>
+            <div class="timeline-row" id="toyota">
+                <div class="timeline-card">
+                    <h2>Toyota</h2>
+                    <p>Information about my time at Toyota...</p>
+                    <button onclick="openModal('toyota-modal')">More Info</button>
+                </div>
+            </div>
+        </div>
 
-    <main class="timeline">
-        <div class="timeline-row">
-            <div class="narrative">
-                <h3>Story Intro</h3>
-                <p>Your journey into the world of mechanical engineering and medical devices.</p>
-            </div>
-            <div class="action-card">
-                <button onclick="openModal('storyIntroModal')">Details</button>
-                <div id="storyIntroModal" class="modal">
-                    <!-- Detailed content for Story Intro -->
-                </div>
+        <!-- Modals -->
+        <div class="modal" id="story-intro-modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('story-intro-modal')">&times;</span>
+                <h3>Story Intro Details</h3>
+                <p>Technical explanations...</p>
             </div>
         </div>
-        <div class="timeline-row">
-            <div class="narrative">
-                <h3>Lab Assistant</h3>
-                <p>Your experience as a Lab Assistant, where you developed your foundational skills.</p>
-            </div>
-            <div class="action-card">
-                <button onclick="openModal('labAssistantModal')">Details</button>
-                <div id="labAssistantModal" class="modal">
-                    <!-- Detailed content for Lab Assistant experience -->
-                </div>
+        <div class="modal" id="lab-assistant-modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('lab-assistant-modal')">&times;</span>
+                <h3>Lab Assistant Details</h3>
+                <p>Technical explanations...</p>
             </div>
         </div>
-        <div class="timeline-row">
-            <div class="narrative">
-                <h3>TD Power Systems</h3>
-                <p>Details about your experience at TD Power Systems.</p>
-            </div>
-            <div class="action-card">
-                <button onclick="openModal('tdPowerSystemsModal')">Details</button>
-                <div id="tdPowerSystemsModal" class="modal">
-                    <!-- Detailed content for TD Power Systems experience -->
-                </div>
+        <div class="modal" id="masters-education-modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('masters-education-modal')">&times;</span>
+                <h3>Masters Education Details</h3>
+                <p>Technical explanations...</p>
             </div>
         </div>
-        <div class="timeline-row">
-            <div class="narrative">
-                <h3>Toyota Internship</h3>
-                <p>Your transformative internship experience at Toyota.</p>
+        <div class="modal" id="td-power-systems-modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('td-power-systems-modal')">&times;</span>
+                <h3>TD Power Systems Details</h3>
+                <p>Technical explanations...</p>
             </div>
-            <div class="action-card">
-                <button onclick="openModal('toyotaModal')">Details</button>
-                <div id="toyotaModal" class="modal">
-                    <!-- Detailed content for Toyota internship -->
-                </div>
+        </div>
+        <div class="modal" id="toyota-modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('toyota-modal')">&times;</span>
+                <h3>Toyota Details</h3>
+                <p>Technical explanations...</p>
             </div>
         </div>
     </main>
-
-    <button onclick="toggleEditMode()">Toggle Edit Mode</button>
-
-    <script src="script.js"></script>
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
 </body>
 </html>
