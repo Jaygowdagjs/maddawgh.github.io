@@ -43,30 +43,16 @@
         .nav-item:hover { color: #fff; text-shadow: 0 0 8px var(--accent); }
 
         /* --- HERO (UPDATED FOR LARGER IMAGE) --- */
-        header {
-            min-height: 100vh; /* Increased height to accommodate larger image */
-            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
-            padding: 100px 20px 60px 20px;
-        }
-        .profile-gear-wrapper { 
-            position: relative; 
-            width: 600px; /* Thrice original (200 * 3) */
-            height: 600px; /* Thrice original (200 * 3) */
-            margin-bottom: 40px; 
-            display: flex; justify-content: center; align-items: center; 
-        }
-       .profile-gear { 
-    position: absolute; 
-    width: 100%; 
-    height: 100%; 
-    fill: transparent; /* Makes the gear body empty like the image */
-    stroke: var(--accent); /* Adds the neon outline */
-    stroke-width: 2px;
-    /* This creates the glow effect on the gear teeth themselves */
-    filter: drop-shadow(0 0 8px var(--accent));
-    opacity: 0.9;
-    z-index: 1;
-}
+       <header>
+        <div class="profile-gear-wrapper">
+            <svg class="profile-gear" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="48" />
+            </svg>
+            <img src="profile.jpg" alt="Profile" class="profile-img image-editable" onerror="this.src='https://via.placeholder.com/420/0f172a/38bdf8?text=Jayanth+Gowda'">
+        </div>
+        <h1 class="editable">Jayanth Gowda</h1>
+        <p class="hero-sub editable">Graduate Mechanical Engineer (M.S.) | Medical Device Design<br>Building FDA-compliant healthcare solutions.</p>
+    </header>
 
 .profile-img { 
     width: 420px; 
