@@ -245,15 +245,82 @@
         </div>
     </div>
 
-    <div id="overlay-btech" class="overlay">
+<div id="overlay-btech" class="overlay">
         <div class="close-btn" onclick="closeOverlay('overlay-btech')">×</div>
         <div class="overlay-content">
-            <h2 class="editable">B.Tech in Mechanical Engineering</h2>
-            <p class="editable" style="color:var(--accent); margin-bottom:30px;">Presidency University (2019-2023)</p>
-            <div class="editable">
-                <p>Focused on fundamental mechanical principles and manufacturing processes.</p>
+            <h2 class="editable" style="text-align: center; font-size: 2.5rem; margin-bottom: 5px;">B.Tech in Mechanical Engineering</h2>
+            <p class="editable" style="color:var(--accent); text-align: center; font-weight: bold; margin-bottom: 40px; letter-spacing: 2px;">PRESIDENCY UNIVERSITY | 2019 - 2023</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 25px; margin-bottom: 50px;">
+                
+                <div class="btech-card editable">
+                    <h3 style="color:var(--accent); margin-bottom:10px; border-bottom:1px solid #334155;">1. Engineering Mechanics & Design</h3>
+                    <p style="font-size: 0.9rem; color: #fff; margin-bottom: 8px;">• Statics & Dynamics • Strength of Materials • Machine Design</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Trained to analyze forces, stresses, and motion. These form the backbone of safe, reliable precision systems.</p>
+                </div>
+
+                <div class="btech-card editable">
+                    <h3 style="color:var(--accent); margin-bottom:10px; border-bottom:1px solid #334155;">2. Manufacturing & Materials</h3>
+                    <p style="font-size: 0.9rem; color: #fff; margin-bottom: 8px;">• Manufacturing Processes • Materials Science • Metrology</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Focused on how design choices impact manufacturability and tolerances—critical for CAD-to-production transitions.</p>
+                </div>
+
+                <div class="btech-card editable">
+                    <h3 style="color:var(--accent); margin-bottom:10px; border-bottom:1px solid #334155;">3. Thermal & Fluid Systems</h3>
+                    <p style="font-size: 0.9rem; color: #fff; margin-bottom: 8px;">• Thermodynamics • Heat Transfer • Fluid Mechanics</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Analysis of energy transfer and flow systems, supporting my expertise in cooling systems and imaging hardware.</p>
+                </div>
+
+                <div class="btech-card editable">
+                    <h3 style="color:var(--accent); margin-bottom:10px; border-bottom:1px solid #334155;">4. Design & Analysis Tools</h3>
+                    <p style="font-size: 0.9rem; color: #fff; margin-bottom: 8px;">• CAD / Engineering Drawing • Numerical Methods</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Developed structured problem-solving and visualization applied in CAD modeling and validation workflows.</p>
+                </div>
             </div>
-            <div class="visual-placeholder image-editable">Upload Visual</div>
+
+            <div style="display: flex; gap: 30px; background: rgba(56, 189, 248, 0.05); padding: 30px; border-radius: 15px; border: 1px solid #334155; margin-bottom: 50px;">
+                <div style="flex: 1;" class="editable">
+                    <h3 style="color:var(--accent); margin-bottom:15px;">Technical Competencies</h3>
+                    <ul style="list-style: none; font-size: 0.9rem; color: var(--text-muted);">
+                        <li>⚙️ Engineering Drawing Interpretation</li>
+                        <li>⚙️ Material Selection Reasoning</li>
+                        <li>⚙️ Manufacturing Process Awareness</li>
+                        <li>⚙️ Structured Analytical Problem-Solving</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; border-left: 1px solid #334155; padding-left: 30px;" class="editable">
+                    <h3 style="color:var(--accent); margin-bottom:15px;">Academic Focus</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Applied theoretical analysis to practical mechanical systems through lab work and design-based coursework projects.</p>
+                </div>
+            </div>
+
+            <div style="width: 100%; border-top: 2px solid #334155; padding-top: 40px;">
+                <div class="visual-placeholder image-editable" style="height: 450px; border-radius: 10px; overflow: hidden; background: #000;">
+                    <img src="graduation.jpg" class="visual-img" onerror="this.src='https://via.placeholder.com/1200x500?text=Upload+Graduation+Cohort+Photo'">
+                </div>
+                <p style="text-align: center; margin-top: 15px; font-size: 0.85rem; letter-spacing: 1px; color: var(--text-muted); text-transform: uppercase;">
+                    Bachelor of Technology in Mechanical Engineering — Presidency University
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .btech-card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .btech-card:hover {
+            transform: translateY(-10px) rotateX(2deg);
+            box-shadow: 0 20px 40px rgba(56, 189, 248, 0.15);
+            background: #232f45;
+        }
+    </style>
         </div>
     </div>
 
