@@ -325,24 +325,162 @@
     </div>
 
     <div id="overlay-masters" class="overlay">
-        <div class="close-btn" onclick="closeOverlay('overlay-masters')">×</div>
-        <div class="overlay-content">
-            <h2 class="editable">Masters at Stevens</h2>
-            <div class="tab-nav">
-                <div class="tab-btn active" onclick="switchTab('ms-courses', this)">Core Courses</div>
-                <div class="tab-btn" onclick="switchTab('ms-skills', this)">Skills</div>
-            </div>
-            <div id="ms-courses" class="tab-panel active">
-                <div class="editable">
-                    <h3>Medical Device Design</h3>
-                    <p>Lifecycle design and FDA compliance.</p>
+    <div class="close-btn" onclick="closeOverlay('overlay-masters')">×</div>
+    <div class="overlay-content">
+        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 5px;">Master of Science in Mechanical Engineering</h2>
+        <p style="color:var(--accent); text-align: center; font-weight: bold; margin-bottom: 20px; letter-spacing: 2px;">STEVENS INSTITUTE OF TECHNOLOGY</p>
+        
+        <div style="background: rgba(56, 189, 248, 0.05); padding: 20px; border-radius: 10px; border: 1px solid #334155; margin-bottom: 40px; text-align: center;">
+            <p style="font-style: italic; color: var(--text-muted); max-width: 800px; margin: 0 auto;">
+                "This program helped me transition from foundational mechanical engineering into regulated, product-driven engineering, where design decisions must be manufacturable, testable, traceable, and compliant."
+            </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;">
+            
+            <div class="master-module">
+                <div class="module-header">DFM / DFA: Design for Manufacturability</div>
+                <div class="module-body">
+                    <p>Focus: Tolerance stack-up, process selection (machining, molding, additive), and part count reduction.</p>
+                    <div class="tag-container">
+                        <span class="tech-tag">DFMA</span> <span class="tech-tag">Tolerance Analysis</span> <span class="tech-tag">Part Consolidation</span>
+                    </div>
+                    <blockquote class="takeaway">"I learned to design for assembly efficiency and scale, minimizing cost and variation."</blockquote>
                 </div>
-                <div class="visual-placeholder image-editable">Upload Visual</div>
             </div>
-            <div id="ms-skills" class="tab-panel">
-                <ul class="editable">
-                    <li>SolidWorks & ANSYS</li>
-                    <li>ISO 13485 Compliance</li>
+
+            <div class="master-module">
+                <div class="module-header">Medical Device Design & Technology</div>
+                <div class="module-body">
+                    <p>Focus: Design Controls, V&V, Risk Management (FMEA), and FDA 510(k) pathways.</p>
+                    <div class="tag-container">
+                        <span class="tech-tag">Design Controls</span> <span class="tech-tag">V&V</span> <span class="tech-tag">FMEA</span> <span class="tech-tag">FDA DHF</span>
+                    </div>
+                    <blockquote class="takeaway">"Shaped my thinking on reliability and safety within a documented regulatory framework."</blockquote>
+                </div>
+            </div>
+
+            <div class="master-module">
+                <div class="module-header">Medical Devices for Manufacturability</div>
+                <div class="module-body">
+                    <p>Focus: Scaling from prototype to production, process validation, and design transfer.</p>
+                    <div class="tag-container">
+                        <span class="tech-tag">Design Transfer</span> <span class="tech-tag">Process Validation</span> <span class="tech-tag">Scaling</span>
+                    </div>
+                    <blockquote class="takeaway">"Reinforced why early manufacturability thinking prevents device failures during scale-up."</blockquote>
+                </div>
+            </div>
+
+            <div class="master-module">
+                <div class="module-header">Quality in Life Sciences Manufacturing</div>
+                <div class="module-body">
+                    <p>Focus: ISO 13485, FDA 21 CFR 820, CAPA systems, and Root Cause Analysis (RCA).</p>
+                    <div class="tag-container">
+                        <span class="tech-tag">ISO 13485</span> <span class="tech-tag">21 CFR 820</span> <span class="tech-tag">CAPA</span> <span class="tech-tag">RCA</span>
+                    </div>
+                    <blockquote class="takeaway">"Taught me how engineering decisions exist within a Quality Management System."</blockquote>
+                </div>
+            </div>
+
+            <div class="master-module">
+                <div class="module-header">Applied Machine Learning (Engineering)</div>
+                <div class="module-body">
+                    <p>Focus: Data preprocessing, regression, and classification for engineering data interpretation.</p>
+                    <div class="tag-container">
+                        <span class="tech-tag">Regression</span> <span class="tech-tag">Data Analysis</span> <span class="tech-tag">Predictive Insights</span>
+                    </div>
+                    <blockquote class="takeaway">"Leveraging data to identify patterns and potential failure modes in manufacturing."</blockquote>
+                </div>
+            </div>
+
+            <div class="master-module">
+                <div class="module-header">Project Management</div>
+                <div class="module-body">
+                    <p>Focus: WBS, risk allocation, cross-functional coordination, and timeline control.</p>
+                    <div class="tag-container">
+                        <span class="tech-tag">WBS</span> <span class="tech-tag">Resource Allocation</span> <span class="tech-tag">Project Lifecycle</span>
+                    </div>
+                    <blockquote class="takeaway">"Strengthened my ability to manage engineering work as a balanced system of scope and cost."</blockquote>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px; padding: 40px; border: 2px dashed var(--accent); border-radius: 15px;">
+            <h3 style="color:var(--accent); text-align: center; margin-bottom: 20px;">The Integrated Engineering Mindset</h3>
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; text-align: center;">
+                <div style="flex: 1; min-width: 200px;">
+                    <p style="font-weight: bold; color: #fff;">Manufacturability</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Designing for reality, not just CAD.</p>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <p style="font-weight: bold; color: #fff;">Compliance</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Mastery of ISO 13485 & FDA regs.</p>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <p style="font-weight: bold; color: #fff;">Risk Management</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Proactive FMEA and CAPA thinking.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="visual-placeholder image-editable" style="height: 250px;">
+                <img src="dfm-comparison.jpg" class="visual-img" onerror="this.src='https://via.placeholder.com/500x250?text=DFMA+Comparison+Visual'">
+            </div>
+            <div class="visual-placeholder image-editable" style="height: 250px;">
+                <img src="quality-standards.jpg" class="visual-img" onerror="this.src='https://via.placeholder.com/500x250?text=ISO+13485+/+FDA+Standards'">
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .master-module {
+        background: #1e293b;
+        border: 1px solid #334155;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .master-module:hover {
+        border-color: var(--accent);
+        box-shadow: 0 0 15px var(--accent-glow);
+    }
+    .module-header {
+        background: #334155;
+        padding: 12px 20px;
+        font-weight: 800;
+        color: var(--accent);
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+    .module-body {
+        padding: 20px;
+    }
+    .tag-container {
+        margin: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .tech-tag {
+        background: rgba(56, 189, 248, 0.1);
+        color: var(--accent);
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+    .takeaway {
+        border-left: 3px solid var(--accent);
+        padding-left: 15px;
+        margin-top: 15px;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        font-style: italic;
+    }
+</style>
                 </ul>
             </div>
         </div>
